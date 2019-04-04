@@ -1,0 +1,1 @@
+web: gunicorn systemgrafo.wsgi --log-file -
