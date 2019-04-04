@@ -1,0 +1,6 @@
+.env
+.idea
+.fiocruz
+*.sqlite3
+*pyc
+__pycache__
