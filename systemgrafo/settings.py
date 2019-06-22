@@ -17,6 +17,9 @@ from dj_database_url import parse as dburl
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+NEO4J_RESOURCE_URI = config('NEO4J_RESOURCE_URI')
+NEO4J_USERNAME = config('NEO4J_USERNAME')
+NEO4J_PASSWORD = config('NEO4J_PASSWORD')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -38,7 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'systemgrafo.core'
+    'systemgrafo.core',
+    'systemgrafo.subscriptions',
+    'systemgrafo.neo4japp',
 ]
 
 MIDDLEWARE = [
@@ -77,7 +82,7 @@ WSGI_APPLICATION = 'systemgrafo.wsgi.application'
 
 default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 DATABASES = {
-    'default': config('DATABASE_URL', default=default_dburl,cast=dburl),
+    'default': config('DATABASE_URL', default=default_dburl, cast=dburl),
 }
 
 
@@ -103,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'UTC'
 
@@ -117,7 +122,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-#Endereço da URL onde se encontram os arquivos statics
-#STATIC_URL = 'http://localhost:8001/'
+# Endereço da URL onde se encontram os arquivos statics
+# STATIC_URL = 'http://localhost:8001/'
+
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+# Email configuration
+EMAIL_BACKEND = config('EMAIL_BACKEND')
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT', cast=int)
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', cast=bool)
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')

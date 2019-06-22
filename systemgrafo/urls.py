@@ -13,11 +13,35 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
+from __future__ import absolute_import
+
+# Static files for development
+from django.conf import settings
+from django.conf.urls import url
+#from django.conf.urls.static import static
+
+
 from django.contrib import admin
 from django.urls import path
 import systemgrafo.core.views
 
+from systemgrafo.subscriptions.views import subscribe
+from systemgrafo.neo4japp.views import GeneListView, GeneDetailView, PersonListView, PersonDetailView, index
+
+
+admin.autodiscover()
+
 urlpatterns = [
     path('', systemgrafo.core.views.home),
+    path('inscricao/', subscribe),
     path('admin/', admin.site.urls),
+    #path('', systemgrafo.neo4japp),
+
+    # Index view
+    url(r'^$', index),
+    url(r'^genes/$', GeneListView.as_view(), name='gene-list'),
+    url(r'^genes/(?P<pk>[\d]+)/$', GeneDetailView.as_view(), name='gene-detail'),
+    url(r'^persons/$', PersonListView.as_view(), name='person-list'),
+    url(r'^persons/(?P<pk>[\d]+)/$', PersonDetailView.as_view(), name='person-detail'),
 ]
