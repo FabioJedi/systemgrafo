@@ -1,5 +1,5 @@
 from django.core import mail
-from django.http import HttpResponseRedirect, HttpResponse
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.template.loader import render_to_string
 from systemgrafo.subscriptions.forms import SubscriptionForm
