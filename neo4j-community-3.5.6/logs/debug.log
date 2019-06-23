@@ -2493,3 +2493,432 @@ MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
 
 2019-06-22 16:06:31.961+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=7412, gcTime=0, gcCount=0}
 2019-06-22 20:59:26.753+0000 WARN [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2019-06-23 02:35:21.091+0000 WARN [o.n.k.i.JvmChecker] You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2019-06-23 02:35:21.135+0000 WARN [o.n.i.p.PageCache] The dbms.memory.pagecache.size setting has not been configured. It is recommended that this setting is always explicitly configured, to ensure the system has a balanced configuration. Until then, a computed heuristic value of 3088846848 bytes will be used instead. Run `neo4j-admin memrec` for memory configuration suggestions.
+2019-06-23 02:35:21.582+0000 INFO [o.n.g.f.m.e.CommunityEditionModule] No locking implementation specified, defaulting to 'community'
+2019-06-23 02:35:21.796+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Creating 'graph.db' database.
+2019-06-23 02:35:21.832+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Requirement `Database available` makes database graph.db unavailable.
+2019-06-23 02:35:21.833+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database graph.db is unavailable.
+2019-06-23 02:35:21.861+0000 INFO [o.n.i.d.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2019-06-23 02:35:21.862+0000 INFO [o.n.i.d.DiagnosticsManager] Neo4j Kernel properties:
+2019-06-23 02:35:21.862+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.http.enabled=true
+2019-06-23 02:35:21.863+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.edition=community
+2019-06-23 02:35:21.863+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.security.auth_enabled=true
+2019-06-23 02:35:21.863+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.windows_service_name=neo4j
+2019-06-23 02:35:21.863+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2019-06-23 02:35:21.863+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.directories.neo4j_home=/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6
+2019-06-23 02:35:21.863+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.https.enabled=true
+2019-06-23 02:35:21.863+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.directories.import=import
+2019-06-23 02:35:21.864+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.jvm.additional=-XX:+UseG1GC
+2019-06-23 02:35:21.864+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.tx_log.rotation.retention_policy=1 days
+2019-06-23 02:35:21.864+0000 INFO [o.n.i.d.DiagnosticsManager] Diagnostics providers:
+2019-06-23 02:35:21.864+0000 INFO [o.n.i.d.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2019-06-23 02:35:21.864+0000 INFO [o.n.i.d.DiagnosticsManager] org.neo4j.internal.diagnostics.DiagnosticsManager
+2019-06-23 02:35:21.864+0000 INFO [o.n.i.d.DiagnosticsManager] SYSTEM_MEMORY
+2019-06-23 02:35:21.865+0000 INFO [o.n.i.d.DiagnosticsManager] JAVA_MEMORY
+2019-06-23 02:35:21.865+0000 INFO [o.n.i.d.DiagnosticsManager] OPERATING_SYSTEM
+2019-06-23 02:35:21.865+0000 INFO [o.n.i.d.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2019-06-23 02:35:21.865+0000 INFO [o.n.i.d.DiagnosticsManager] CLASSPATH
+2019-06-23 02:35:21.865+0000 INFO [o.n.i.d.DiagnosticsManager] LIBRARY_PATH
+2019-06-23 02:35:21.865+0000 INFO [o.n.i.d.DiagnosticsManager] SYSTEM_PROPERTIES
+2019-06-23 02:35:21.865+0000 INFO [o.n.i.d.DiagnosticsManager] TIMEZONE_DATABASE
+2019-06-23 02:35:21.865+0000 INFO [o.n.i.d.DiagnosticsManager] LINUX_SCHEDULERS
+2019-06-23 02:35:21.865+0000 INFO [o.n.i.d.DiagnosticsManager] NETWORK
+2019-06-23 02:35:21.866+0000 INFO [o.n.i.d.DiagnosticsManager] System memory information:
+2019-06-23 02:35:21.868+0000 INFO [o.n.i.d.DiagnosticsManager] Total Physical memory: 7.67 GB
+2019-06-23 02:35:21.869+0000 INFO [o.n.i.d.DiagnosticsManager] Free Physical memory: 4.10 GB
+2019-06-23 02:35:21.869+0000 INFO [o.n.i.d.DiagnosticsManager] Committed virtual memory: 4.92 GB
+2019-06-23 02:35:21.869+0000 INFO [o.n.i.d.DiagnosticsManager] Total swap space: 2.00 GB
+2019-06-23 02:35:21.869+0000 INFO [o.n.i.d.DiagnosticsManager] Free swap space: 2.00 GB
+2019-06-23 02:35:21.869+0000 INFO [o.n.i.d.DiagnosticsManager] JVM memory information:
+2019-06-23 02:35:21.870+0000 INFO [o.n.i.d.DiagnosticsManager] Free  memory: 68.94 MB
+2019-06-23 02:35:21.870+0000 INFO [o.n.i.d.DiagnosticsManager] Total memory: 126.00 MB
+2019-06-23 02:35:21.870+0000 INFO [o.n.i.d.DiagnosticsManager] Max   memory: 1.92 GB
+2019-06-23 02:35:21.887+0000 INFO [o.n.i.d.DiagnosticsManager] Garbage Collector: G1 Young Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+2019-06-23 02:35:21.887+0000 INFO [o.n.i.d.DiagnosticsManager] Garbage Collector: G1 Old Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+2019-06-23 02:35:21.889+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: CodeHeap 'non-nmethods' (Non-heap memory): committed=2.44 MB, used=1.11 MB, max=5.56 MB, threshold=0.00 B
+2019-06-23 02:35:21.889+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=17.75 MB, used=17.01 MB, max=-1.00 B, threshold=0.00 B
+2019-06-23 02:35:21.889+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: CodeHeap 'profiled nmethods' (Non-heap memory): committed=4.19 MB, used=4.15 MB, max=117.22 MB, threshold=0.00 B
+2019-06-23 02:35:21.890+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=2.25 MB, used=1.95 MB, max=1.00 GB, threshold=0.00 B
+2019-06-23 02:35:21.890+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Eden Space (Heap memory): committed=51.00 MB, used=36.00 MB, max=-1.00 B, threshold=?
+2019-06-23 02:35:21.890+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Old Gen (Heap memory): committed=69.00 MB, used=14.56 MB, max=1.92 GB, threshold=0.00 B
+2019-06-23 02:35:21.890+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Survivor Space (Heap memory): committed=6.00 MB, used=6.00 MB, max=-1.00 B, threshold=?
+2019-06-23 02:35:21.891+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: CodeHeap 'non-profiled nmethods' (Non-heap memory): committed=2.44 MB, used=939.50 kB, max=117.22 MB, threshold=0.00 B
+2019-06-23 02:35:21.891+0000 INFO [o.n.i.d.DiagnosticsManager] Operating system information:
+2019-06-23 02:35:21.891+0000 INFO [o.n.i.d.DiagnosticsManager] Operating System: Linux; version: 4.15.0-52-generic; arch: amd64; cpus: 4
+2019-06-23 02:35:21.892+0000 INFO [o.n.i.d.DiagnosticsManager] Max number of file descriptors: 4096
+2019-06-23 02:35:21.892+0000 INFO [o.n.i.d.DiagnosticsManager] Number of open file descriptors: 125
+2019-06-23 02:35:21.905+0000 INFO [o.n.i.d.DiagnosticsManager] Process id: 4288@FFA-Inspiron-5537
+2019-06-23 02:35:21.905+0000 INFO [o.n.i.d.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2019-06-23 02:35:21.927+0000 INFO [o.n.i.d.DiagnosticsManager] Local timezone: America/Sao_Paulo
+2019-06-23 02:35:21.928+0000 INFO [o.n.i.d.DiagnosticsManager] JVM information:
+2019-06-23 02:35:21.928+0000 INFO [o.n.i.d.DiagnosticsManager] VM Name: OpenJDK 64-Bit Server VM
+2019-06-23 02:35:21.928+0000 INFO [o.n.i.d.DiagnosticsManager] VM Vendor: Oracle Corporation
+2019-06-23 02:35:21.928+0000 INFO [o.n.i.d.DiagnosticsManager] VM Version: 11.0.3+7-Ubuntu-1ubuntu218.04.1
+2019-06-23 02:35:21.929+0000 INFO [o.n.i.d.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2019-06-23 02:35:21.929+0000 INFO [o.n.i.d.DiagnosticsManager] VM Arguments: [-XX:+UseG1GC, -XX:-OmitStackTraceInFastThrow, -XX:+AlwaysPreTouch, -XX:+UnlockExperimentalVMOptions, -XX:+TrustFinalNonStaticFields, -XX:+DisableExplicitGC, -Djdk.tls.ephemeralDHKeySize=2048, -Djdk.tls.rejectClientInitiatedRenegotiation=true, -Dunsupported.dbms.udc.source=tarball, -Dfile.encoding=UTF-8]
+2019-06-23 02:35:21.929+0000 INFO [o.n.i.d.DiagnosticsManager] Java classpath:
+2019-06-23 02:35:21.931+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/conf
+2019-06-23 02:35:21.931+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-data-collector-3.5.6.jar
+2019-06-23 02:35:21.931+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/bcpkix-jdk15on-1.60.jar
+2019-06-23 02:35:21.931+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-spatial-index-3.5.6.jar
+2019-06-23 02:35:21.931+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-planner-spi-3.5-3.5.6.jar
+2019-06-23 02:35:21.931+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/netty-all-4.1.32.Final.jar
+2019-06-23 02:35:21.931+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-rewriting-3.5-3.5.6.jar
+2019-06-23 02:35:21.931+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-frontend-2.3-2.3.12.jar
+2019-06-23 02:35:21.931+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jetty-io-9.4.17.v20190418.jar
+2019-06-23 02:35:21.931+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jackson-jaxrs-1.9.13.jar
+2019-06-23 02:35:21.931+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-parser-3.5-3.5.6.jar
+2019-06-23 02:35:21.931+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/zstd-jni-1.3.8-6.jar
+2019-06-23 02:35:21.931+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-configuration-3.5.6.jar
+2019-06-23 02:35:21.931+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/scala-reflect-2.11.12.jar
+2019-06-23 02:35:21.931+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/commons-lang-2.6.jar
+2019-06-23 02:35:21.931+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-3.5.6.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-util-3.4-3.4.13.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jetty-servlet-9.4.17.v20190418.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-io-3.5.6.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-fulltext-index-3.5.6.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-interpreted-runtime-3.5.6.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/commons-lang3-3.8.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jersey-core-1.19.3.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jsr311-api-1.1.2.r612.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/caffeine-2.6.2.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/zstd-proxy-3.5.6.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-frontend-3.1-3.1.9.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-annotation-processors-3.5.6.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jetty-server-9.4.17.v20190418.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-util-3.5-3.5.6.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/txw2-2.3.0.1.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-planner-3.5-3.5.6.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-index-3.5.6.jar
+2019-06-23 02:35:21.932+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-lucene-upgrade-3.5.6.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/javax.servlet-api-3.1.0.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-lucene-index-3.5.6.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/parboiled-core-1.1.7.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-graphdb-api-3.5.6.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-procedure-api-3.5.6.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-compiler-2.3-2.3.12.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-codegen-3.5.6.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-bolt-3.5.6.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/plugins
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-security-3.5.6.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-ir-3.5-3.5.6.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/commons-io-2.6.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/commons-compress-1.18.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/scala-library-2.11.12.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/stax-ex-1.7.8.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/lucene-analyzers-common-5.5.5.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/lucene-codecs-5.5.5.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/commons-configuration-1.10.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/activation-1.1.1.jar
+2019-06-23 02:35:21.933+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/lucene-queryparser-5.5.5.jar
+2019-06-23 02:35:21.934+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/plugins/*
+2019-06-23 02:35:21.934+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-3.5.6.jar
+2019-06-23 02:35:21.934+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-compiler-3.1-3.1.9.jar
+2019-06-23 02:35:21.934+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-resource-3.5.6.jar
+2019-06-23 02:35:21.934+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-server-3.5.6.jar
+2019-06-23 02:35:21.934+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-concurrent-3.5.6.jar
+2019-06-23 02:35:21.934+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jersey-servlet-1.19.3.jar
+2019-06-23 02:35:21.934+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/eclipse-collections-api-9.2.0.jar
+2019-06-23 02:35:21.934+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-expression-evaluator-3.5.6.jar
+2019-06-23 02:35:21.934+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-ast-3.5-3.5.6.jar
+2019-06-23 02:35:21.934+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jetty-security-9.4.17.v20190418.jar
+2019-06-23 02:35:21.934+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-consistency-check-3.5.6.jar
+2019-06-23 02:35:21.934+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-ssl-3.5.6.jar
+2019-06-23 02:35:21.934+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/lucene-core-5.5.5.jar
+2019-06-23 02:35:21.934+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jProcesses-1.6.4.jar
+2019-06-23 02:35:21.934+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-collections-3.5.6.jar
+2019-06-23 02:35:21.935+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-planner-3.4-3.4.13.jar
+2019-06-23 02:35:21.935+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-browser-3.2.20.jar
+2019-06-23 02:35:21.935+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/commons-text-1.4.jar
+2019-06-23 02:35:21.935+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-front-end-3.5-3.5.6.jar
+2019-06-23 02:35:21.935+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-command-line-3.5.6.jar
+2019-06-23 02:35:21.935+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-diagnostics-3.5.6.jar
+2019-06-23 02:35:21.935+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/bcprov-jdk15on-1.60.jar
+2019-06-23 02:35:21.935+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-logging-3.5.6.jar
+2019-06-23 02:35:21.935+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/FastInfoset-1.2.13.jar
+2019-06-23 02:35:21.935+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-graph-algo-3.5.6.jar
+2019-06-23 02:35:21.935+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/eclipse-collections-9.2.0.jar
+2019-06-23 02:35:21.935+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/concurrentlinkedhashmap-lru-1.4.2.jar
+2019-06-23 02:35:21.935+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/opencsv-2.3.jar
+2019-06-23 02:35:21.936+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-dbms-3.5.6.jar
+2019-06-23 02:35:21.936+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/server-api-3.5.6.jar
+2019-06-23 02:35:21.936+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jaxb-api-2.3.0.jar
+2019-06-23 02:35:21.936+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-graph-matching-3.1.9.jar
+2019-06-23 02:35:21.936+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-expressions-3.5-3.5.6.jar
+2019-06-23 02:35:21.936+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-expression-3.4-3.4.13.jar
+2019-06-23 02:35:21.936+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-runtime-util-3.5.6.jar
+2019-06-23 02:35:21.936+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-logical-plans-3.5-3.5.6.jar
+2019-06-23 02:35:21.936+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/openCypher-frontend-1-3.4.13.jar
+2019-06-23 02:35:21.936+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-import-tool-3.5.6.jar
+2019-06-23 02:35:21.936+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-kernel-3.5.6.jar
+2019-06-23 02:35:21.936+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jetty-webapp-9.4.17.v20190418.jar
+2019-06-23 02:35:21.936+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/commons-logging-1.1.1.jar
+2019-06-23 02:35:21.937+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-planner-spi-3.4-3.4.13.jar
+2019-06-23 02:35:21.937+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/istack-commons-runtime-3.0.5.jar
+2019-06-23 02:35:21.937+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-unsafe-3.5.6.jar
+2019-06-23 02:35:21.937+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jackson-mapper-asl-1.9.13.jar
+2019-06-23 02:35:21.937+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-logical-plans-3.4-3.4.13.jar
+2019-06-23 02:35:21.937+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-legacy-3.5.6.jar
+2019-06-23 02:35:21.937+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jaxb-runtime-2.3.0.1.jar
+2019-06-23 02:35:21.937+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jetty-util-9.4.17.v20190418.jar
+2019-06-23 02:35:21.937+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-values-3.5.6.jar
+2019-06-23 02:35:21.937+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/parboiled-scala_2.11-1.1.7.jar
+2019-06-23 02:35:21.937+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-cypher-ir-3.4-3.4.13.jar
+2019-06-23 02:35:21.937+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jersey-server-1.19.3.jar
+2019-06-23 02:35:21.937+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-kernel-api-3.5.6.jar
+2019-06-23 02:35:21.937+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-csv-3.5.6.jar
+2019-06-23 02:35:21.938+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jPowerShell-1.9.jar
+2019-06-23 02:35:21.938+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jetty-http-9.4.17.v20190418.jar
+2019-06-23 02:35:21.938+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-udc-3.5.6.jar
+2019-06-23 02:35:21.938+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/WMI4Java-1.6.1.jar
+2019-06-23 02:35:21.938+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jackson-core-asl-1.9.13.jar
+2019-06-23 02:35:21.938+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-jmx-3.5.6.jar
+2019-06-23 02:35:21.938+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/neo4j-common-3.5.6.jar
+2019-06-23 02:35:21.938+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jetty-xml-9.4.17.v20190418.jar
+2019-06-23 02:35:21.938+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/jaxb-core-2.3.0.1.jar
+2019-06-23 02:35:21.938+0000 INFO [o.n.i.d.DiagnosticsManager] Library path:
+2019-06-23 02:35:21.939+0000 INFO [o.n.i.d.DiagnosticsManager] /usr/java/packages/lib
+2019-06-23 02:35:21.939+0000 INFO [o.n.i.d.DiagnosticsManager] /usr/lib/x86_64-linux-gnu/jni
+2019-06-23 02:35:21.939+0000 INFO [o.n.i.d.DiagnosticsManager] /lib/x86_64-linux-gnu
+2019-06-23 02:35:21.939+0000 INFO [o.n.i.d.DiagnosticsManager] /usr/lib/x86_64-linux-gnu
+2019-06-23 02:35:21.939+0000 INFO [o.n.i.d.DiagnosticsManager] /usr/lib/jni
+2019-06-23 02:35:21.939+0000 INFO [o.n.i.d.DiagnosticsManager] /lib
+2019-06-23 02:35:21.939+0000 INFO [o.n.i.d.DiagnosticsManager] /usr/lib
+2019-06-23 02:35:21.939+0000 INFO [o.n.i.d.DiagnosticsManager] System.properties:
+2019-06-23 02:35:21.939+0000 INFO [o.n.i.d.DiagnosticsManager] sun.desktop = gnome
+2019-06-23 02:35:21.939+0000 INFO [o.n.i.d.DiagnosticsManager] awt.toolkit = sun.awt.X11.XToolkit
+2019-06-23 02:35:21.940+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.tls.rejectClientInitiatedRenegotiation = true
+2019-06-23 02:35:21.940+0000 INFO [o.n.i.d.DiagnosticsManager] sun.cpu.isalist = 
+2019-06-23 02:35:21.940+0000 INFO [o.n.i.d.DiagnosticsManager] sun.jnu.encoding = UTF-8
+2019-06-23 02:35:21.940+0000 INFO [o.n.i.d.DiagnosticsManager] sun.arch.data.model = 64
+2019-06-23 02:35:21.940+0000 INFO [o.n.i.d.DiagnosticsManager] user.timezone = America/Sao_Paulo
+2019-06-23 02:35:21.940+0000 INFO [o.n.i.d.DiagnosticsManager] sun.java.launcher = SUN_STANDARD
+2019-06-23 02:35:21.940+0000 INFO [o.n.i.d.DiagnosticsManager] user.country = BR
+2019-06-23 02:35:21.940+0000 INFO [o.n.i.d.DiagnosticsManager] sun.boot.library.path = /usr/lib/jvm/java-11-openjdk-amd64/lib
+2019-06-23 02:35:21.940+0000 INFO [o.n.i.d.DiagnosticsManager] sun.java.command = org.neo4j.server.CommunityEntryPoint --home-dir=/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6 --config-dir=/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/conf
+2019-06-23 02:35:21.940+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.debug = release
+2019-06-23 02:35:21.940+0000 INFO [o.n.i.d.DiagnosticsManager] sun.cpu.endian = little
+2019-06-23 02:35:21.940+0000 INFO [o.n.i.d.DiagnosticsManager] user.home = /home/fabiofreire
+2019-06-23 02:35:21.940+0000 INFO [o.n.i.d.DiagnosticsManager] user.language = pt
+2019-06-23 02:35:21.940+0000 INFO [o.n.i.d.DiagnosticsManager] file.separator = /
+2019-06-23 02:35:21.940+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.udc.source = tarball
+2019-06-23 02:35:21.940+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.tls.ephemeralDHKeySize = 2048
+2019-06-23 02:35:21.941+0000 INFO [o.n.i.d.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2019-06-23 02:35:21.941+0000 INFO [o.n.i.d.DiagnosticsManager] user.name = fabiofreire
+2019-06-23 02:35:21.941+0000 INFO [o.n.i.d.DiagnosticsManager] path.separator = :
+2019-06-23 02:35:21.941+0000 INFO [o.n.i.d.DiagnosticsManager] file.encoding = UTF-8
+2019-06-23 02:35:21.941+0000 INFO [o.n.i.d.DiagnosticsManager] user.dir = /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6
+2019-06-23 02:35:21.941+0000 INFO [o.n.i.d.DiagnosticsManager] sun.os.patch.level = unknown
+2019-06-23 02:35:21.941+0000 INFO [o.n.i.d.DiagnosticsManager] sun.io.unicode.encoding = UnicodeLittle
+2019-06-23 02:35:21.941+0000 INFO [o.n.i.d.DiagnosticsManager] (IANA) TimeZone Database Version:
+2019-06-23 02:35:21.984+0000 INFO [o.n.i.d.DiagnosticsManager]   TimeZone version: 2018g (available for 599 zone identifiers)
+2019-06-23 02:35:21.984+0000 INFO [o.n.i.d.DiagnosticsManager] Linux scheduler information:
+2019-06-23 02:35:21.996+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:21.997+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:21.997+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:21.998+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:21.998+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:21.998+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:21.998+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:21.999+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:21.999+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:21.999+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:21.999+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.000+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.000+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.000+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.000+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.001+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.001+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.001+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.001+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.002+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.002+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.002+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.002+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.003+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.003+0000 INFO [o.n.i.d.DiagnosticsManager] noop deadline [cfq] 
+2019-06-23 02:35:22.003+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.003+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.003+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.004+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.004+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.004+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.004+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.005+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.005+0000 INFO [o.n.i.d.DiagnosticsManager] [none] 
+2019-06-23 02:35:22.005+0000 INFO [o.n.i.d.DiagnosticsManager] Network information:
+2019-06-23 02:35:22.007+0000 INFO [o.n.i.d.DiagnosticsManager] Interface wlp2s0:
+2019-06-23 02:35:22.007+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:8038:af6f:277c:b96b%wlp2s0
+2019-06-23 02:35:22.007+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 192.168.1.103
+2019-06-23 02:35:22.007+0000 INFO [o.n.i.d.DiagnosticsManager] Interface lo:
+2019-06-23 02:35:22.007+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1%lo
+2019-06-23 02:35:22.007+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 127.0.0.1
+2019-06-23 02:35:22.007+0000 INFO [o.n.i.d.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2019-06-23 02:35:22.297+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV3_4[v0.A.9] record format from store /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db
+2019-06-23 02:35:22.340+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV3_4[v0.A.9] record format from store /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db
+2019-06-23 02:35:22.340+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Format not configured. Selected format from the store: RecordFormat:StandardV3_4[v0.A.9]
+2019-06-23 02:35:22.849+0000 INFO [o.n.k.i.i.l.NativeLabelScanStore] Label index cleanup job registered
+2019-06-23 02:35:22.860+0000 INFO [o.n.k.NeoStoreDataSource] No commits found after last check point (which is at LogPosition{logVersion=0, byteOffset=235865})
+2019-06-23 02:35:22.876+0000 INFO [o.n.k.i.s.DynamicArrayStore] Rebuilding id generator for[/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.nodestore.db.labels] ...
+2019-06-23 02:35:22.890+0000 INFO [o.n.k.i.i.l.NativeLabelScanStore] Label index cleanup job started
+2019-06-23 02:35:22.893+0000 INFO [o.n.k.i.s.DynamicArrayStore] [/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.nodestore.db.labels] high id=1 (defragged=0)
+2019-06-23 02:35:22.893+0000 INFO [o.n.k.i.s.DynamicArrayStore] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.nodestore.db.labels rebuild id generator, highId=1 defragged count=0
+2019-06-23 02:35:22.893+0000 INFO [o.n.k.i.s.NodeStore] Rebuilding id generator for[/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.nodestore.db] ...
+2019-06-23 02:35:22.896+0000 INFO [o.n.k.i.s.NodeStore] [/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.nodestore.db] high id=1176 (defragged=0)
+2019-06-23 02:35:22.896+0000 INFO [o.n.k.i.s.NodeStore] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.nodestore.db rebuild id generator, highId=1176 defragged count=0
+2019-06-23 02:35:22.896+0000 INFO [o.n.k.i.s.DynamicStringStore] Rebuilding id generator for[/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.propertystore.db.index.keys] ...
+2019-06-23 02:35:22.905+0000 INFO [o.n.k.i.s.DynamicStringStore] [/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.propertystore.db.index.keys] high id=4 (defragged=0)
+2019-06-23 02:35:22.905+0000 INFO [o.n.k.i.s.DynamicStringStore] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.propertystore.db.index.keys rebuild id generator, highId=4 defragged count=0
+2019-06-23 02:35:22.905+0000 INFO [o.n.k.i.s.PropertyKeyTokenStore] Rebuilding id generator for[/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.propertystore.db.index] ...
+2019-06-23 02:35:22.911+0000 INFO [o.n.k.i.s.PropertyKeyTokenStore] [/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.propertystore.db.index] high id=3 (defragged=0)
+2019-06-23 02:35:22.912+0000 INFO [o.n.k.i.s.PropertyKeyTokenStore] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.propertystore.db.index rebuild id generator, highId=3 defragged count=0
+2019-06-23 02:35:22.913+0000 INFO [o.n.k.i.s.DynamicStringStore] Rebuilding id generator for[/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.propertystore.db.strings] ...
+2019-06-23 02:35:22.917+0000 INFO [o.n.k.i.s.DynamicStringStore] [/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.propertystore.db.strings] high id=1 (defragged=0)
+2019-06-23 02:35:22.917+0000 INFO [o.n.k.i.s.DynamicStringStore] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.propertystore.db.strings rebuild id generator, highId=1 defragged count=0
+2019-06-23 02:35:22.917+0000 INFO [o.n.k.i.s.DynamicArrayStore] Rebuilding id generator for[/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.propertystore.db.arrays] ...
+2019-06-23 02:35:22.922+0000 INFO [o.n.k.i.s.DynamicArrayStore] [/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.propertystore.db.arrays] high id=1 (defragged=0)
+2019-06-23 02:35:22.923+0000 INFO [o.n.k.i.s.DynamicArrayStore] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.propertystore.db.arrays rebuild id generator, highId=1 defragged count=0
+2019-06-23 02:35:22.923+0000 INFO [o.n.k.i.s.PropertyStore] Rebuilding id generator for[/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.propertystore.db] ...
+2019-06-23 02:35:22.926+0000 INFO [o.n.k.i.s.PropertyStore] [/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.propertystore.db] high id=1854 (defragged=0)
+2019-06-23 02:35:22.927+0000 INFO [o.n.k.i.s.PropertyStore] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.propertystore.db rebuild id generator, highId=1854 defragged count=0
+2019-06-23 02:35:22.927+0000 INFO [o.n.k.i.s.RelationshipStore] Rebuilding id generator for[/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.relationshipstore.db] ...
+2019-06-23 02:35:22.932+0000 INFO [o.n.k.i.i.l.NativeLabelScanStore] Label index cleanup job finished: Number of pages visited: 3, Number of cleaned crashed pointers: 0, Time spent: 38ms
+2019-06-23 02:35:22.932+0000 INFO [o.n.k.i.i.l.NativeLabelScanStore] Label index cleanup job closed
+2019-06-23 02:35:22.936+0000 INFO [o.n.k.i.s.RelationshipStore] [/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.relationshipstore.db] high id=0 (defragged=0)
+2019-06-23 02:35:22.936+0000 INFO [o.n.k.i.s.RelationshipStore] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.relationshipstore.db rebuild id generator, highId=0 defragged count=0
+2019-06-23 02:35:22.936+0000 INFO [o.n.k.i.s.DynamicStringStore] Rebuilding id generator for[/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.relationshiptypestore.db.names] ...
+2019-06-23 02:35:22.939+0000 INFO [o.n.k.i.s.DynamicStringStore] [/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.relationshiptypestore.db.names] high id=1 (defragged=0)
+2019-06-23 02:35:22.939+0000 INFO [o.n.k.i.s.DynamicStringStore] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.relationshiptypestore.db.names rebuild id generator, highId=1 defragged count=0
+2019-06-23 02:35:22.939+0000 INFO [o.n.k.i.s.RelationshipTypeTokenStore] Rebuilding id generator for[/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.relationshiptypestore.db] ...
+2019-06-23 02:35:22.942+0000 INFO [o.n.k.i.s.RelationshipTypeTokenStore] [/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.relationshiptypestore.db] high id=0 (defragged=0)
+2019-06-23 02:35:22.942+0000 INFO [o.n.k.i.s.RelationshipTypeTokenStore] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.relationshiptypestore.db rebuild id generator, highId=0 defragged count=0
+2019-06-23 02:35:22.944+0000 INFO [o.n.k.i.s.DynamicStringStore] Rebuilding id generator for[/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.labeltokenstore.db.names] ...
+2019-06-23 02:35:22.946+0000 INFO [o.n.k.i.s.DynamicStringStore] [/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.labeltokenstore.db.names] high id=2 (defragged=0)
+2019-06-23 02:35:22.946+0000 INFO [o.n.k.i.s.DynamicStringStore] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.labeltokenstore.db.names rebuild id generator, highId=2 defragged count=0
+2019-06-23 02:35:22.946+0000 INFO [o.n.k.i.s.LabelTokenStore] Rebuilding id generator for[/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.labeltokenstore.db] ...
+2019-06-23 02:35:22.948+0000 INFO [o.n.k.i.s.LabelTokenStore] [/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.labeltokenstore.db] high id=1 (defragged=0)
+2019-06-23 02:35:22.948+0000 INFO [o.n.k.i.s.LabelTokenStore] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.labeltokenstore.db rebuild id generator, highId=1 defragged count=0
+2019-06-23 02:35:22.950+0000 INFO [o.n.k.i.s.SchemaStore] Rebuilding id generator for[/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.schemastore.db] ...
+2019-06-23 02:35:22.953+0000 INFO [o.n.k.i.s.SchemaStore] [/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.schemastore.db] high id=1 (defragged=0)
+2019-06-23 02:35:22.953+0000 INFO [o.n.k.i.s.SchemaStore] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.schemastore.db rebuild id generator, highId=1 defragged count=0
+2019-06-23 02:35:22.953+0000 INFO [o.n.k.i.s.RelationshipGroupStore] Rebuilding id generator for[/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.relationshipgroupstore.db] ...
+2019-06-23 02:35:22.956+0000 INFO [o.n.k.i.s.RelationshipGroupStore] [/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.relationshipgroupstore.db] high id=1 (defragged=0)
+2019-06-23 02:35:22.956+0000 INFO [o.n.k.i.s.RelationshipGroupStore] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore.relationshipgroupstore.db rebuild id generator, highId=1 defragged count=0
+2019-06-23 02:35:22.956+0000 INFO [o.n.k.i.s.MetaDataStore] Rebuilding id generator for[/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore] ...
+2019-06-23 02:35:22.958+0000 INFO [o.n.k.i.s.MetaDataStore] [/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore] high id=15 (defragged=0)
+2019-06-23 02:35:22.958+0000 INFO [o.n.k.i.s.MetaDataStore] /home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/data/databases/graph.db/neostore rebuild id generator, highId=15 defragged count=0
+2019-06-23 02:35:22.983+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2019-06-23 02:35:22.984+0000 INFO [o.n.i.d.DiagnosticsManager] Graph Database: community single StoreId{creationTime=1560814979651, randomId=-8945608550379979973, storeVersion=16094931155187206, upgradeTime=1560814979651, upgradeId=1}
+2019-06-23 02:35:22.985+0000 INFO [o.n.i.d.DiagnosticsManager] Kernel version: 3.5.6,73866e84158298d5f4a7325b6466c0189ad21d11
+2019-06-23 02:35:22.985+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2019-06-23 02:35:22.987+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2019-06-23 02:35:22.988+0000 INFO [o.n.i.d.DiagnosticsManager] Store versions:
+2019-06-23 02:35:22.989+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore v0.A.9
+2019-06-23 02:35:22.989+0000 INFO [o.n.i.d.DiagnosticsManager]   NodeStore v0.A.9
+2019-06-23 02:35:22.989+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-06-23 02:35:22.989+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyIndexStore v0.A.9
+2019-06-23 02:35:22.989+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-06-23 02:35:22.989+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore v0.A.9
+2019-06-23 02:35:22.990+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyStore v0.A.9
+2019-06-23 02:35:22.990+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipStore v0.A.9
+2019-06-23 02:35:22.990+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-06-23 02:35:22.990+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipTypeStore v0.A.9
+2019-06-23 02:35:22.990+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-06-23 02:35:22.990+0000 INFO [o.n.i.d.DiagnosticsManager]   LabelTokenStore v0.A.9
+2019-06-23 02:35:22.990+0000 INFO [o.n.i.d.DiagnosticsManager]   SchemaStore v0.A.9
+2019-06-23 02:35:22.990+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipGroupStore v0.A.9
+2019-06-23 02:35:22.990+0000 INFO [o.n.i.d.DiagnosticsManager]   NeoStore v0.A.9
+2019-06-23 02:35:22.990+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2019-06-23 02:35:22.990+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2019-06-23 02:35:22.991+0000 INFO [o.n.i.d.DiagnosticsManager] Id usage:
+2019-06-23 02:35:22.991+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2019-06-23 02:35:22.991+0000 INFO [o.n.i.d.DiagnosticsManager]   NodeStore: used=1176 high=1175
+2019-06-23 02:35:22.992+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=4 high=3
+2019-06-23 02:35:22.992+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyIndexStore: used=3 high=2
+2019-06-23 02:35:22.993+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2019-06-23 02:35:22.993+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2019-06-23 02:35:22.993+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyStore: used=1854 high=1853
+2019-06-23 02:35:22.994+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipStore: used=0 high=-1
+2019-06-23 02:35:22.994+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=1 high=0
+2019-06-23 02:35:22.994+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipTypeStore: used=0 high=-1
+2019-06-23 02:35:22.994+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=2 high=1
+2019-06-23 02:35:22.994+0000 INFO [o.n.i.d.DiagnosticsManager]   LabelTokenStore: used=1 high=0
+2019-06-23 02:35:22.995+0000 INFO [o.n.i.d.DiagnosticsManager]   SchemaStore: used=1 high=0
+2019-06-23 02:35:22.995+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipGroupStore: used=1 high=0
+2019-06-23 02:35:22.995+0000 INFO [o.n.i.d.DiagnosticsManager]   NeoStore: used=15 high=14
+2019-06-23 02:35:22.995+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2019-06-23 02:35:22.995+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS START ---
+2019-06-23 02:35:22.995+0000 INFO [o.n.i.d.DiagnosticsManager] Neostore records:
+2019-06-23 02:35:22.996+0000 INFO [o.n.i.d.DiagnosticsManager] TIME (Creation time): 1560814979651
+2019-06-23 02:35:22.996+0000 INFO [o.n.i.d.DiagnosticsManager] RANDOM_NUMBER (Random number for store id): -8945608550379979973
+2019-06-23 02:35:22.996+0000 INFO [o.n.i.d.DiagnosticsManager] LOG_VERSION (Current log version): 0
+2019-06-23 02:35:22.996+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_ID (Last committed transaction): 8
+2019-06-23 02:35:22.997+0000 INFO [o.n.i.d.DiagnosticsManager] STORE_VERSION (Store format version): 16094931155187206
+2019-06-23 02:35:22.997+0000 INFO [o.n.i.d.DiagnosticsManager] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+2019-06-23 02:35:22.997+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 0
+2019-06-23 02:35:22.997+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+2019-06-23 02:35:22.997+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TIME (Time of last upgrade): 1560814979651
+2019-06-23 02:35:22.997+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): -162267259577
+2019-06-23 02:35:22.997+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): 0
+2019-06-23 02:35:22.998+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+2019-06-23 02:35:22.998+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 235865
+2019-06-23 02:35:22.998+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_COMMIT_TIMESTAMP (Commit time timestamp for last committed transaction): 1561164645945
+2019-06-23 02:35:22.998+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_COMMIT_TIMESTAMP (Commit timestamp of transaction the most recent upgrade was performed at): 0
+2019-06-23 02:35:22.998+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS END ---
+2019-06-23 02:35:23.000+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE START ---
+2019-06-23 02:35:23.000+0000 INFO [o.n.i.d.DiagnosticsManager] Transaction log:
+2019-06-23 02:35:23.001+0000 INFO [o.n.i.d.DiagnosticsManager] Oldest transaction 2 found in log with version 0
+2019-06-23 02:35:23.002+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE END ---
+2019-06-23 02:35:23.007+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2019-06-23 02:35:23.009+0000 INFO [o.n.i.d.DiagnosticsManager] Disk space on partition (Total / Free / Free %): 213463576576 / 188947275776 / 88
+2019-06-23 02:35:23.012+0000 INFO [o.n.i.d.DiagnosticsManager] Storage files: (filename : modification date - size)
+2019-06-23 02:35:23.017+0000 INFO [o.n.i.d.DiagnosticsManager]   index:
+2019-06-23 02:35:23.018+0000 INFO [o.n.i.d.DiagnosticsManager]   - Total: 2019-06-17T20:42:59-0300 - 0.00 B
+2019-06-23 02:35:23.019+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore: 2019-06-21T21:50:50-0300 - 8.00 kB
+2019-06-23 02:35:23.019+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.counts.db.a: 2019-06-21T19:01:01-0300 - 160.00 B
+2019-06-23 02:35:23.020+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.counts.db.b: 2019-06-21T21:50:50-0300 - 160.00 B
+2019-06-23 02:35:23.021+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.id: 2019-06-22T23:35:22-0300 - 9.00 B
+2019-06-23 02:35:23.021+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labelscanstore.db: 2019-06-22T23:35:22-0300 - 48.00 kB
+2019-06-23 02:35:23.022+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db: 2019-06-21T18:36:01-0300 - 8.00 kB
+2019-06-23 02:35:23.022+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.id: 2019-06-22T23:35:22-0300 - 9.00 B
+2019-06-23 02:35:23.022+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names: 2019-06-21T18:36:01-0300 - 8.00 kB
+2019-06-23 02:35:23.022+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names.id: 2019-06-22T23:35:22-0300 - 9.00 B
+2019-06-23 02:35:23.023+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db: 2019-06-21T21:50:50-0300 - 23.99 kB
+2019-06-23 02:35:23.023+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.id: 2019-06-22T23:35:22-0300 - 9.00 B
+2019-06-23 02:35:23.023+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels: 2019-06-17T20:42:59-0300 - 8.00 kB
+2019-06-23 02:35:23.023+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels.id: 2019-06-22T23:35:22-0300 - 9.00 B
+2019-06-23 02:35:23.024+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db: 2019-06-21T21:50:50-0300 - 79.68 kB
+2019-06-23 02:35:23.024+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays: 2019-06-17T20:42:59-0300 - 8.00 kB
+2019-06-23 02:35:23.024+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays.id: 2019-06-22T23:35:22-0300 - 9.00 B
+2019-06-23 02:35:23.024+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.id: 2019-06-22T23:35:22-0300 - 9.00 B
+2019-06-23 02:35:23.025+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index: 2019-06-21T18:36:01-0300 - 8.00 kB
+2019-06-23 02:35:23.025+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.id: 2019-06-22T23:35:22-0300 - 9.00 B
+2019-06-23 02:35:23.025+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys: 2019-06-21T18:36:01-0300 - 8.00 kB
+2019-06-23 02:35:23.025+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys.id: 2019-06-22T23:35:22-0300 - 9.00 B
+2019-06-23 02:35:23.026+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings: 2019-06-17T20:42:59-0300 - 8.00 kB
+2019-06-23 02:35:23.026+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings.id: 2019-06-22T23:35:22-0300 - 9.00 B
+2019-06-23 02:35:23.026+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db: 2019-06-17T20:42:59-0300 - 8.00 kB
+2019-06-23 02:35:23.026+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db.id: 2019-06-22T23:35:22-0300 - 9.00 B
+2019-06-23 02:35:23.027+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db: 2019-06-17T20:42:59-0300 - 0.00 B
+2019-06-23 02:35:23.027+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db.id: 2019-06-22T23:35:22-0300 - 9.00 B
+2019-06-23 02:35:23.027+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db: 2019-06-21T18:36:01-0300 - 8.00 kB
+2019-06-23 02:35:23.027+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.id: 2019-06-22T23:35:22-0300 - 9.00 B
+2019-06-23 02:35:23.028+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names: 2019-06-17T20:42:59-0300 - 8.00 kB
+2019-06-23 02:35:23.028+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names.id: 2019-06-22T23:35:22-0300 - 9.00 B
+2019-06-23 02:35:23.028+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db: 2019-06-17T20:42:59-0300 - 8.00 kB
+2019-06-23 02:35:23.028+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db.id: 2019-06-22T23:35:22-0300 - 9.00 B
+2019-06-23 02:35:23.029+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.transaction.db.0: 2019-06-21T21:50:50-0300 - 230.35 kB
+2019-06-23 02:35:23.029+0000 INFO [o.n.i.d.DiagnosticsManager] Storage summary: 
+2019-06-23 02:35:23.029+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of store: 478.46 kB
+2019-06-23 02:35:23.029+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of mapped files: 247.67 kB
+2019-06-23 02:35:23.029+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2019-06-23 02:35:23.029+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Fulfilling of requirement 'Database available' makes database graph.db available.
+2019-06-23 02:35:23.030+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database graph.db is ready.
+2019-06-23 02:35:23.030+0000 INFO [o.n.k.i.DatabaseHealth] Database health set to OK
+2019-06-23 02:35:23.719+0000 INFO [o.n.b.BoltServer] Bolt server loaded
+2019-06-23 02:35:23.878+0000 INFO [o.n.b.BoltServer] Bolt enabled on 127.0.0.1:7687.
+2019-06-23 02:35:25.655+0000 INFO [o.n.i.d.DiagnosticsManager] --- SERVER STARTED START ---
+2019-06-23 02:35:27.137+0000 INFO [o.n.i.d.DiagnosticsManager] --- SERVER STARTED END ---
+2019-06-23 02:35:33.744+0000 WARN [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
