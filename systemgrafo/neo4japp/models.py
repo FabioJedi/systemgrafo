@@ -1,7 +1,7 @@
 from django.db import models
 # from django.core.urlresolvers import reverse (Descontinuado)
 from django.urls import reverse
-from systemgrafo import db
+from systemgrafo.neo4japp import db
 
 
 # Create your models here.
@@ -20,9 +20,7 @@ class NodeHandle(models.Model):
         return db.get_node(self.handle_id, self.__class__.__name__)
 
     def delete(self, **kwargs):
-        """
-                Delete that node handle and the handles node.
-                """
+        """Delete that node handle and the handles node."""
         db.delete_node(self.handle_id, self.__class__.__name__)
         super(NodeHandle, self).delete()
         return True
@@ -30,51 +28,30 @@ class NodeHandle(models.Model):
     delete.alters_data = True
 
 
-class Gene(NodeHandle):
+class Protein(NodeHandle):
 
     def __str__(self):
-        return self.title
+        return self.name
 
-    def _title(self):
+    def _name(self):
         try:
-            return self.node().properties.get('title', 'Missing title')
+            return self.node().properties.get('name', 'Missing title')
         except AttributeError:
-            return 'Missing node?'
-    title = property(_title)
+            return 'Nó ausente?'
+    name = property(_name)
 
     def get_absolute_url(self):
-        return reverse('movie-detail', args=[str(self.id)])
+        return reverse('protein-detail', args=[str(self.id)])
 
-    def _actors(self):
-        persons = []
-        for person in db.get_actors(self.handle_id):
-            persons.append({'person': Person.objects.get(handle_id=person['handle_id']), 'roles': person['roles']})
-        return persons
-    actors = property(_actors)
-
-    def _directors(self):
-        persons = []
-        for person in db.get_directors(self.handle_id):
-            persons.append({'person': Person.objects.get(handle_id=person['handle_id'])})
-        return persons
-    directors = property(_directors)
-
-    def _producers(self):
-        persons = []
-        for person in db.get_producers(self.handle_id):
-            persons.append({'person': Person.objects.get(handle_id=person['handle_id'])})
-        return persons
-    producers = property(_producers)
-
-    def _writers(self):
-        persons = []
-        for person in db.get_writers(self.handle_id):
-            persons.append({'person': Person.objects.get(handle_id=person['handle_id'])})
-        return persons
-    writers = property(_writers)
+    def _codif_protein(self):
+        genes = []
+        for gene in db.get_directors(self.handle_id):
+            genes.append({'gene': Gene.objects.get(handle_id=gene['handle_id'])})
+        return genes
+    codif_protein = property(_codif_protein)
 
 
-class Person(NodeHandle):
+class Gene(NodeHandle):
 
     def __str__(self):
         return self.name
@@ -83,16 +60,16 @@ class Person(NodeHandle):
         try:
             return self.node().properties.get('name', 'Missing name')
         except AttributeError:
-            return 'Missing node?'
+            return 'Nó ausente?'
     name = property(_name)
 
     def get_absolute_url(self):
-        return reverse('person-detail', args=[str(self.id)])
+        return reverse('gene-detail', args=[str(self.id)])
 
-    def _genes(self):
-        genes = []
-        for gene in db.get_genes(self.handle_id):
-            genes.append({'gene': Gene.objects.get(handle_id=gene['handle_id']),
-                           'relationships': gene['relationships']})
-        return genes
-    genes = property(_genes)
+    def _proteins(self):
+        proteins = []
+        for protein in db.get_proteins(self.handle_id):
+            proteins.append({'protein': Protein.objects.get(handle_id=protein['handle_id']),
+                           'relationships': protein['relationships']})
+        return proteins
+    proteins = property(_proteins)

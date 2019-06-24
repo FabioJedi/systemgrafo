@@ -4,8 +4,8 @@ from __future__ import absolute_import
 from django.shortcuts import render
 from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
-from .models import Gene, Person
-from systemgrafo import db
+from .models import Gene, Protein
+from systemgrafo.neo4japp import db
 
 
 class GeneDetailView(DetailView):
@@ -18,15 +18,15 @@ class GeneListView(ListView):
     model = Gene
 
 
-class PersonDetailView(DetailView):
+class ProteinDetailView(DetailView):
 
-    model = Person
+    model = Protein
 
 
-class PersonListView(ListView):
+class ProteinListView(ListView):
 
-    model = Person
+    model = Protein
 
 
 def index(request):
-    return render(request, 'neo4japp/index.html')
+    return render(request, 'neo4japp/base.html')

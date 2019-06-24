@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% block title %}{{ block.super }} | Proteins{% endblock %}
+
+{% block content %}
+    <div class="list-group">
+        {% for protein in object_list|dictsort:"name" %}
+            <a href="{{ protein.get_absolute_url }}" class="list-group-item">
+                <h4 class="list-group-item-heading">{{ protein }}</h4>
+                <p class="list-group-item-text">Mais para vir</p>
+            </a>
+        {% empty %}
+            <a href="/">
+                <h4 class="list-group-item-heading">Nenhuma proteina</h4>
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %}

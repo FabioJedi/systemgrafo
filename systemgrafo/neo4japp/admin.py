@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 
 from django.contrib import admin
-from .models import Gene, Person
+from .models import Gene, Protein
 
 # Register your models here.
 
@@ -40,8 +40,8 @@ class GeneAdmin(NodeHandleAdmin):
     pass
 
 
-class PersonAdmin(NodeHandleAdmin):
+class ProteinAdmin(NodeHandleAdmin):
     pass
 
 admin.site.register(Gene, GeneAdmin)
-admin.site.register(Person, PersonAdmin)
+admin.site.register(Protein, ProteinAdmin)

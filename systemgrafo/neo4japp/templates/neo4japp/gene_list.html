@@ -1,16 +1,16 @@
-{% extends 'base.html' %}
+{% extends 'index.html' %}
 {% block title %}{{ block.super }} | Genes{% endblock %}
 
 {% block content %}
     <div class="list-group">
-        {% for movie in object_list|dictsort:"title" %}
-            <a href="{{ movie.get_absolute_url }}" class="list-group-item">
+        {% for gene in object_list|dictsort:"name" %}
+            <a href="{{ gene.get_absolute_url }}" class="list-group-item">
                 <h4 class="list-group-item-heading">{{ gene }}</h4>
-                <p class="list-group-item-text">More to come</p>
+                <p class="list-group-item-text">Mais para vir</p>
             </a>
         {% empty %}
             <a href="/">
-                <h4 class="list-group-item-heading">No genes yet</h4>
+                <h4 class="list-group-item-heading">Nenhum genes</h4>
             </a>
         {% endfor %}
     </div>

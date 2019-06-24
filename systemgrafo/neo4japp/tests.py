@@ -4,13 +4,14 @@ from django.test import TestCase
 # Tests stolen from neo4jdb test_connection.py
 
 import unittest
-from db import Neo4jDBConnectionManager
+# from systemgrafo.neo4japp.db import Neo4jDBConnectionManager
+from systemgrafo.neo4japp.db import Neo4jDBSessionManager
 
 
 class TestConnection(unittest.TestCase):
 
     def setUp(self):
-        self.manager = Neo4jDBConnectionManager("http://localhost:7474")
+        self.manager = Neo4jDBSessionManager("http://localhost:7474")
 
     def tearDown(self):
         with self.manager.transaction() as cursor:

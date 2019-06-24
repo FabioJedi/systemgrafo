@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from contextlib import contextmanager
-#from neo4j.v1 import GraphDatabase, basic_auth, TRUST_DEFAULT (DESCONTINUADO)
+# from neo4j.v1 import GraphDatabase, basic_auth, TRUST_DEFAULT (DESCONTINUADO)
 from neo4j import GraphDatabase, basic_auth, TRUST_DEFAULT
 
 

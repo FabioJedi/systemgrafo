@@ -1,18 +1,18 @@
 <!--Tamplate static (para resposta dinâmica)-->
 {% load static %}
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}SystemGrafo: API para criação e manipulação de redes metabólicas através de grafos{% endblock %}</title>
+    <title>{% block title %}Systemgrafo{% endblock %}</title>
 
     <!-- Bootstrap -->
     {% load staticfiles %}
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'css/jumbotron-narrow.css' %}" rel="stylesheet">
+    <link href="{% static "css/style.css" %}" rel="stylesheet">
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "css/jumbotron-narrow.css" %}" rel="stylesheet">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -27,17 +27,18 @@
       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li><a href="/">Início</a></li>
-            <li><a href="/genes/">Genes</a></li>
-            <li><a href="/persons/">Enzimas</a></li>
-            <li><a href="/admin/">Administração</a></li>
+          <li><a href="/genes/">Genes</a></li>
+          <li><a href="/proteins/">Proteins</a></li>
+          <li><a href="/inscricao">Inscrição</a></li>
+          <li><a href="/admin/">Administração</a></li>
         </ul>
-        <h3 class="text-muted">{% block heading %}SystemGrafo: API para criação e manipulação de redes metabólicas através de grafos{% endblock %}</h3>
+        <h3 class="text-muted">{% block heading %}SystemGrafo{% endblock %}</h3>
       </div>
-      {% block content %}API para criação e manipulação de redes metabólicas através de grafos{% endblock %}
+      {% block content %}SystemGrafo: API para criação e manipulação de redes metabólicas através de grafos{% endblock %}
       <div class="footer">
         <p><a href="https://github.com/FabioJedi">Github</a> </p>
       </div>
-      <!--
+            <!--
             <div>
               <h4>Debug</h4>
               handle_id: {{ object.handle_id }}
@@ -47,6 +48,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <script src="{% static "js/bootstrap/bootstrap.min.js" %}"></script>
   </body>
 </html>
