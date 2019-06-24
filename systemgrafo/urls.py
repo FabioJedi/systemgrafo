@@ -27,7 +27,7 @@ from django.urls import path
 import systemgrafo.core.views
 
 from systemgrafo.subscriptions.views import subscribe
-from systemgrafo.neo4japp.views import GeneListView, GeneDetailView, ProteinListView, ProteinDetailView #, neo4j
+#from systemgrafo.neo4japp.views import GeneListView, GeneDetailView, ProteinListView, ProteinDetailView #, neo4j
 
 
 admin.autodiscover()
@@ -40,8 +40,8 @@ urlpatterns = [
 
     # Index view
     #url(r'^$', index),
-    url(r'^genes/$', GeneListView.as_view(), name='gene-list'),
-    url(r'^genes/(?P<pk>[\d]+)/$', GeneDetailView.as_view(), name='gene-detail'),
-    url(r'^proteins/$', ProteinListView.as_view(), name='protein-list'),
-    url(r'^proteins/(?P<pk>[\d]+)/$', ProteinDetailView.as_view(), name='protein-detail'),
+#    url(r'^genes/$', GeneListView.as_view(), name='gene-list'),
+#    url(r'^genes/(?P<pk>[\d]+)/$', GeneDetailView.as_view(), name='gene-detail'),
+#    url(r'^proteins/$', ProteinListView.as_view(), name='protein-list'),
+#    url(r'^proteins/(?P<pk>[\d]+)/$', ProteinDetailView.as_view(), name='protein-detail'),
 ]
