@@ -2,6 +2,8 @@
 
 API para criação e manipulação de redes metabólicas através de grafos.
 
+[![Build Status](https://travis-ci.org/FabioJedi/systemgrafo.svg?branch=master)](https://travis-ci.org/FabioJedi/systemgrafo)
+
 ## Como desenvolver?
 
 1. Clone o repositário.
