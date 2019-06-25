@@ -18,12 +18,12 @@ from dj_database_url import parse as dburl
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 NEO4J_RESOURCE_URI = 'bolt://localhost:7687'
-NEO4J_USERNAME = 'neo4j'
-NEO4J_PASSWORD = 'ffa-1988'
+# NEO4J_USERNAME = ''
+# NEO4J_PASSWORD = ''
 
 # NEO4J_RESOURCE_URI = config('NEO4J_RESOURCE_URI')
-# NEO4J_USERNAME = config('NEO4J_USERNAME')
-# NEO4J_PASSWORD = config('NEO4J_PASSWORD')
+ NEO4J_USERNAME = config('NEO4J_USERNAME')
+ NEO4J_PASSWORD = config('NEO4J_PASSWORD')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
