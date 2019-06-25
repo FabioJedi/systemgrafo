@@ -1,0 +1,14 @@
+SECRET_KEY=THIS_IS_NOT_A_GOOD_SECRET
+DEBUG=True
+ALLOWED_HOSTS=127.0.0.1, .localhost, .herokuapp.com
+
+NEO4J_RESOURCE_URI=bolt://localhost:7687
+NEO4J_USERNAME=
+NEO4J_PASSWORD=
+
+EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
+EMAIL_HOST=localhost
+EMAIL_PORT=25
+EMAIL_USE_TLS=False
+EMAIL_HOST_USER=
+EMAIL_HOST_PASSWORD=
