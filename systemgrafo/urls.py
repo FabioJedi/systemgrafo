@@ -19,18 +19,17 @@ from __future__ import absolute_import
 # Static files for development
 from django.conf import settings
 from django.conf.urls import url
-#from django.conf.urls.static import static
+# from django.conf.urls.static import static
 
 
 from django.contrib import admin
+admin.autodiscover()
+
 from django.urls import path
 import systemgrafo.core.views
 
 from systemgrafo.subscriptions.views import subscribe
-#from systemgrafo.neo4japp.views import GeneListView, GeneDetailView, ProteinListView, ProteinDetailView #, neo4j
-
-
-admin.autodiscover()
+from systemgrafo.neo4japp.views import GeneListView, GeneDetailView, ProteinListView, ProteinDetailView, index
 
 urlpatterns = [
     path('', systemgrafo.core.views.home),
@@ -39,9 +38,9 @@ urlpatterns = [
     #path('base/', neo4j),
 
     # Index view
-    #url(r'^$', index),
-#    url(r'^genes/$', GeneListView.as_view(), name='gene-list'),
-#    url(r'^genes/(?P<pk>[\d]+)/$', GeneDetailView.as_view(), name='gene-detail'),
-#    url(r'^proteins/$', ProteinListView.as_view(), name='protein-list'),
-#    url(r'^proteins/(?P<pk>[\d]+)/$', ProteinDetailView.as_view(), name='protein-detail'),
+    url(r'^$', index),
+    url(r'^genes/$', GeneListView.as_view(), name='gene-list'),
+    url(r'^genes/(?P<pk>[\d]+)/$', GeneDetailView.as_view(), name='gene-detail'),
+    url(r'^proteins/$', ProteinListView.as_view(), name='protein-list'),
+    url(r'^proteins/(?P<pk>[\d]+)/$', ProteinDetailView.as_view(), name='protein-detail'),
 ]

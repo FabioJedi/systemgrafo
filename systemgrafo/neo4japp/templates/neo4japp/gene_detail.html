@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block name %}{{ block.super }} | Genes | {{ object }}{% endblock %}
+
+{% block content %}
+<h1>{{ object.name }}</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <dl class="dl-horizontal">
+            {% if object.node.born %}
+            <dt>Born:</dt>
+            <dd>{{ object.node.born }}</dd>
+            {% endif %}
+        </dl>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Proteins</h3>
+            </div>
+            <div class="panel-body">
+                <ul class="list-unstyled">
+                    {% for protein in object.proteins|dictsort:"protein.name" %}
+                    <li>
+                        <a href="{{ protein.protein.get_absolute_url }}">{{ protein.protein.name }}</a>
+                    </li>
+                    {% empty %}
+                    <li>Nenhuma proteina.</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -3,8 +3,8 @@ DEBUG=True
 ALLOWED_HOSTS=127.0.0.1, .localhost, .herokuapp.com
 
 NEO4J_RESOURCE_URI=bolt://localhost:7687
-NEO4J_USERNAME=
-NEO4J_PASSWORD=
+NEO4J_USERNAME=teste
+NEO4J_PASSWORD=123456
 
 EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
 EMAIL_HOST=localhost

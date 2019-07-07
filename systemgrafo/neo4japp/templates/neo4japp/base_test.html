@@ -1,12 +1,10 @@
-<!--Tamplate static (para resposta dinâmica)-->
-{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}Systemgrafo: API para criação e manipulação de redes metabólicas através de grafos{% endblock %}</title>
+    <title>{% block title %}Neo4japp{% endblock %}</title>
 
     <!-- Bootstrap -->
     {% load staticfiles %}
@@ -26,21 +24,19 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li><a href="/">Início</a></li>
-          <li><a href="/genes/">Genes</a></li>
-          <li><a href="/proteins/">Proteins</a></li>
-          <li><a href="/inscricao">Inscrição</a></li>
-          <li><a href="/admin/">Administração</a></li>
+          <li><a href="/">Home</a></li>
+            <li><a href="/genes/">Genes</a></li>
+            <li><a href="/proteins/">Proteins</a></li>
+            <li><a href="/admin/">Admin</a></li>
         </ul>
-        <h3 class="text-muted">{% block heading %}SystemGrafo{% endblock %}</h3>
+        <h3 class="text-muted">{% block heading %}Neo4japp{% endblock %}</h3>
       </div>
       {% block content %}
-
       {% endblock content %}
       <div class="footer">
-        <p><a href="https://github.com/FabioJedi">Meu Github</a></p>
+        <p><a href="https://github.com/FabioJedi/systemgrafo">Meu Github</a> </p>
       </div>
-            <!--
+      <!--
             <div>
               <h4>Debug</h4>
               handle_id: {{ object.handle_id }}

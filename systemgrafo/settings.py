@@ -18,8 +18,9 @@ from dj_database_url import parse as dburl
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 NEO4J_RESOURCE_URI = 'bolt://localhost:7687'
-# NEO4J_USERNAME = ''
-# NEO4J_PASSWORD = ''
+# NEO4J_RESOURCE_URI = 'bolt://localhost:7474'
+NEO4J_USERNAME = 'teste'
+NEO4J_PASSWORD = '123456'
 
 # NEO4J_RESOURCE_URI = config('NEO4J_RESOURCE_URI')
 # NEO4J_USERNAME = config('NEO4J_USERNAME')
@@ -47,9 +48,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
     'systemgrafo.core',
     'systemgrafo.subscriptions',
-#    'systemgrafo.neo4japp',
+    'systemgrafo.neo4japp',
 ]
 
 MIDDLEWARE = [
@@ -67,7 +69,7 @@ ROOT_URLCONF = 'systemgrafo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

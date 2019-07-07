@@ -1,16 +1,22 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-	<head>
-        <title>{% block title %}SystemGrafo: API para criação e manipulação de redes metabólicas através de grafos{% endblock title %}</title>
+    <head>
+        <title>{% block title %}SystemGrafo{% endblock title %}</title>
 
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <meta name="description" content="SystemGrafo: API para criação e manipulação de redes metabólicas através de grafos">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+
+	    <!-- Bootstrap -->
+        {% load staticfiles %}
+        <link href="{% static "css/style.css" %}" rel="stylesheet">
+        <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+        <link href="{% static "css/jumbotron-narrow.css" %}" rel="stylesheet">
 
         <!-- CSS -->
         <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
@@ -34,9 +40,9 @@
                 border-color: #d0e9c6;
             }
         </style>
-	</head>
+    </head>
 
-	<body>
+    <body>
         <div class="header-frame row">
             <header class="header header-inline min-h-3 row desktop-12 container" role="banner">
 
@@ -49,9 +55,10 @@
                     <a href="javascript:void(0);" class="nav-mobile"><i class="fa fa-bars"></i></a>
                     <ul>
                         <li><a data-scroll href="/">Início</a></li>
-                        <li><a data-scroll href="/genes">Genes</a></li>
-                        <li><a data-scroll href="/proteins">Proteins</a></li>
-                        <li><a data-scroll href="/admin">Administração</a></li>
+                        <li><a data-scroll href="/genes/">Genes</a></li>
+                        <li><a data-scroll href="/proteins/">Proteins</a></li>
+                        <li><a href="/inscricao">Inscrição</a></li>
+                        <li><a data-scroll href="/admin/">Administração</a></li>
                     </ul>
                 </nav>
 
@@ -61,5 +68,19 @@
         {% block content %}
         {% endblock content %}
 
+        <div class="footer">
+            <p><a href="https://github.com/FabioJedi">Meu Github</a></p>
+        </div>
+                <!--
+                <div>
+                  <h4>Debug</h4>
+                  handle_id: {{ object.handle_id }}
+                </div>
+                -->
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="{% static "js/bootstrap/bootstrap.min.js" %}"></script>
     </body>
 </html>

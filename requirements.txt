@@ -1,6 +1,6 @@
 dj-database-url==0.5.0
 dj-static==0.0.6
-Django==2.2
+Django==2.2.2
 python-decouple==3.1
 pytz==2018.9
 sqlparse==0.3.0
@@ -8,3 +8,7 @@ static3==0.7.0
 gunicorn==19.8.1
 psycopg2==2.7.4
 neo4j-driver==1.7.4
+neobolt==1.7.13
+neotime==1.7.4
+six==1.12.0
+django-extensions==2.1.9
