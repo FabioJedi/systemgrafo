@@ -17,7 +17,7 @@ API para criação e manipulação de redes metabólicas através de grafos.
 git clone git@github.com:FabioJedi/systemgrafo.git fiocruz
 cd fiocruz
 python -m venv .fiocruz
-source .wttd/bin/activate
+source .fiocruz/bin/activate
 pip install -r requirements-dev.txt
 cp contrib/env-sample .env
 python manage.py test

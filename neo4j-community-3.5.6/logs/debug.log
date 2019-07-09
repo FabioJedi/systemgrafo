@@ -3802,3 +3802,4 @@ MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
 2019-07-08 23:59:07.382+0000 INFO [o.n.b.BoltServer] Bolt enabled on 127.0.0.1:7687.
 2019-07-08 23:59:08.899+0000 INFO [o.n.i.d.DiagnosticsManager] --- SERVER STARTED START ---
 2019-07-08 23:59:10.294+0000 INFO [o.n.i.d.DiagnosticsManager] --- SERVER STARTED END ---
+2019-07-09 01:36:44.013+0000 WARN [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
