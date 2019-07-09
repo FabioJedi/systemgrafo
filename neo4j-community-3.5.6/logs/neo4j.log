@@ -167,3 +167,15 @@ WARNING: All illegal access operations will be denied in a future release
 2019-07-07 19:05:24.643+0000 INFO  Remote interface available at http://localhost:7474/
 2019-07-07 19:05:40.686+0000 WARN  The client is unauthorized due to authentication failure.
 2019-07-07 19:05:44.392+0000 WARN  The client is unauthorized due to authentication failure.
+nohup: ignorando entrada
+2019-07-08 23:59:04.519+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
+2019-07-08 23:59:04.530+0000 INFO  ======== Neo4j 3.5.6 ========
+2019-07-08 23:59:04.541+0000 INFO  Starting...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/home/fabiofreire/Penas_SI/fiocruz/neo4j-community-3.5.6/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
+WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2019-07-08 23:59:07.382+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2019-07-08 23:59:08.871+0000 INFO  Started.
+2019-07-08 23:59:10.294+0000 INFO  Remote interface available at http://localhost:7474/
