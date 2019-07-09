@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'systemgrafo.core',
     'systemgrafo.subscriptions.apps.SubscriptionsConfig',
-    'systemgrafo.neo4japp.apps.Neo4jappConfig',
+    #'systemgrafo.neo4japp.apps.Neo4jappConfig',
 ]
 
 MIDDLEWARE = [
